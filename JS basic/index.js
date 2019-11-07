@@ -3,6 +3,7 @@
 // 2. live server
 // 3. eslint
 // 4. bracket pair colorizer
+// 5. Auto import
 
 // Primitive
 // 1. Number
