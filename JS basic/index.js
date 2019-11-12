@@ -1,2 +1,4 @@
-const btn = document.getElementById('btn');
-console.log(btn.style);
+'use strict';
+
+name = 'Abhishek';
+console.log(name);
