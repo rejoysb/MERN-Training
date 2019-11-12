@@ -1,0 +1,6 @@
+1. Javascript basic
+2. Alorithms
+3. Time complexity & space complexity -> BF alogrithm
+4. Node Js/ React based
+5. Http Method -> GET, POST,PUT,Patch
+6. Dev OPs -> dev + operations + server , Linux , Docker , kubernetes
