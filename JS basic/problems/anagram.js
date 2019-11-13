@@ -8,4 +8,6 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
+// Regex  -> str.replace(/\w/g,"")
+
 function anagrams(stringA, stringB) {}

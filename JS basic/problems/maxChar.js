@@ -19,4 +19,23 @@
 
 // for in  -> key -> result[var]
 
-function maxChar(str) {}
+function maxChar(str) {
+  const charMap = {};
+
+  for (const char of str.split("")) {
+    charMap[char] = charMap[char] + 1 || 1;
+  }
+
+  let max = 0;
+  let maxCharacter;
+  for (const key in charMap) {
+    if (charMap[key] > max) {
+      max = charMap[key];
+      maxCharacter = key;
+    }
+  }
+
+  return maxCharacter;
+}
+
+console.log(maxChar("abcccccccd"));
