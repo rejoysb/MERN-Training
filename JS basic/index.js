@@ -1,4 +1,14 @@
-'use strict';
+// API -> Application Programming Interface
 
-name = 'Abhishek';
-console.log(name);
+async function getPosts() {
+  const data = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const posts = await data.json();
+
+  console.log(posts);
+}
+
+getPosts();
+
+// fs
+// os
+// http request
