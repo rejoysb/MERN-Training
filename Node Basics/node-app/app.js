@@ -1,4 +1,5 @@
 const _ = require("underscore");
+// lodash
 
 const arr = _.map([1, 2, 3], num => num * 3);
 console.log(arr);
