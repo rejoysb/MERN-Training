@@ -33,7 +33,7 @@ router.patch("/:id", (req, res) => {
 
   const updatedBlog = { ...blogs[blogIndex], title, desc };
   blogs[blogIndex] = updatedBlog;
-  res.send(updatedBlog);
+  res.send(updatedBlog);  
 });
 
 router.put("/:id", (req, res) => {
@@ -56,7 +56,7 @@ router.post("/", (req, res) => {
 
   const { error } = validateBlog(req);
   if (error) return res.status(400).send(error.details[0].message);
-
+  
   const newBlog = { id: blogs.length + 1, title, desc };
   blogs.push(newBlog);
   res.send(newBlog);

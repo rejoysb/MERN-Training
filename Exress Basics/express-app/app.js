@@ -1,5 +1,6 @@
 const express = require("express");
 const blogsRoute = require("./routes/blogs");
+const userRoute = require("./routes/users");
 // initializing the express app
 const app = express();
 
@@ -22,6 +23,7 @@ app.use(express.json());
 // http://url/api/blogs
 
 app.use("/api/blogs", blogsRoute);
+app.use("/api/users", userRoute);
 
 app.listen(3000, () => {
   console.clear();
